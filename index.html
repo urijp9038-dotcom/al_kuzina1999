@@ -76,21 +76,36 @@ footer{margin-top:60px;border-radius:54px 54px 0 0}
 @media(prefers-reduced-motion:reduce){.avatar,.avatar img{animation:none}}
 
 .about{position:relative;overflow:hidden}
-.about>*:not(.neural-net){position:relative;z-index:2}
-.neural-net{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.7;
-background-image:
-linear-gradient(30deg,transparent 48.8%,rgba(107,123,255,.12) 49.5%,rgba(107,123,255,.12) 50.5%,transparent 51.2%),
-linear-gradient(150deg,transparent 48.8%,rgba(255,91,183,.10) 49.5%,rgba(255,91,183,.10) 50.5%,transparent 51.2%);
-background-size:180px 105px;mask-image:linear-gradient(to bottom,transparent 2%,#000 20%,#000 88%,transparent)}
-.neural-net i{position:absolute;width:8px;height:8px;border-radius:50%;background:#fff;box-shadow:0 0 8px #7c8cff,0 0 22px #ff67bb;animation:nodePulse 4.2s ease-in-out infinite}
-.neural-net i:nth-child(1){left:8%;top:18%}.neural-net i:nth-child(2){left:24%;top:36%;animation-delay:-1s}.neural-net i:nth-child(3){left:43%;top:16%;animation-delay:-2s}.neural-net i:nth-child(4){left:66%;top:32%;animation-delay:-.6s}.neural-net i:nth-child(5){left:88%;top:17%;animation-delay:-2.7s}.neural-net i:nth-child(6){left:15%;top:73%;animation-delay:-1.8s}.neural-net i:nth-child(7){left:58%;top:70%;animation-delay:-3.2s}.neural-net i:nth-child(8){left:84%;top:78%;animation-delay:-.3s}
-@keyframes nodePulse{0%,100%{transform:scale(.75);opacity:.35}50%{transform:scale(1.55);opacity:1}}
+
+
+
+
+
 .bigword:after{content:"";position:absolute;inset:50% auto auto 50%;width:52%;aspect-ratio:1;border-radius:50%;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(128,116,255,.18),rgba(255,94,181,.09) 42%,transparent 70%);filter:blur(18px);z-index:-1;animation:heartAura 3.8s ease-in-out infinite}
 .bigword{position:relative;z-index:2}
 @keyframes heartAura{50%{transform:translate(-50%,-50%) scale(1.18);opacity:.72}}
-@media(max-width:699px){.neural-net{background-size:120px 70px;opacity:.55}}
-@media(prefers-reduced-motion:reduce){.neural-net i,.bigword:after{animation:none}}
-</style></head><body><div class="ghost">✦</div><main class="wrap"><section class="hero"><div class="top"><span>Александра Кузина</span><span class="dot"></span><span>AI creator</span></div><div class="orb o1"></div><div class="orb o2"></div><h1>Идеи<br><em>оживают.</em></h1><div class="scribble hand">а невозможное — становится кадром ✦</div><p class="lead">Создаю AI-истории, мультфильмы, визуал и видео, в которых технологии чувствуют по-человечески.</p><a class="cta" href="#works">Смотреть работы ↘</a><div class="avatar"><img src="IMG_6646.png"></div><div class="holo">AI • STORY • MOTION</div></section><div class="marquee"><span>ПРИРУЧАЮ ИИ С ЛЮБОВЬЮ 🤍 &nbsp; • &nbsp; AI FILMS &nbsp; • &nbsp; STORIES &nbsp; • &nbsp; VISUAL &nbsp; • &nbsp; ПРИРУЧАЮ ИИ С ЛЮБОВЬЮ 🤍 &nbsp; • &nbsp; AI FILMS &nbsp; • &nbsp; STORIES &nbsp; • &nbsp; VISUAL &nbsp; • &nbsp;</span></div><section class="section" id="works">
+@media(max-width:699px){}
+
+
+.wrap{isolation:isolate}
+.light-threads{position:absolute;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+.light-threads svg{width:100%;height:100%;min-height:100%;display:block}
+.thread{fill:none;stroke-width:1.15;vector-effect:non-scaling-stroke;filter:url(#softGlow);stroke-linecap:round;stroke-dasharray:10 18;animation:threadFlow 18s linear infinite}
+.t1{stroke:url(#threadA);opacity:.52}.t2{stroke:url(#threadB);opacity:.42;animation-duration:23s}.t3{stroke:url(#threadA);opacity:.28;animation-duration:28s;animation-direction:reverse}
+@keyframes threadFlow{to{stroke-dashoffset:-280}}
+@media(max-width:699px){.thread{stroke-width:.9}.t3{display:none}.t1{opacity:.42}.t2{opacity:.34}}
+@media(prefers-reduced-motion:reduce){.thread{animation:none}}
+</style></head><body><div class="ghost">✦</div><main class="wrap"><div class="light-threads" aria-hidden="true">
+<svg viewBox="0 0 1000 3000" preserveAspectRatio="none">
+<defs>
+<linearGradient id="threadA" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#72cfff" stop-opacity=".08"/><stop offset=".45" stop-color="#9b7cff" stop-opacity=".42"/><stop offset="1" stop-color="#ff78bd" stop-opacity=".10"/></linearGradient>
+<linearGradient id="threadB" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff86c7" stop-opacity=".08"/><stop offset=".5" stop-color="#73c9ff" stop-opacity=".34"/><stop offset="1" stop-color="#b68cff" stop-opacity=".08"/></linearGradient>
+<filter id="softGlow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<path class="thread t1" d="M-70 120 C180 250 40 520 270 700 S620 880 470 1120 S120 1420 330 1660 S790 1830 620 2110 S250 2440 510 3020"/>
+<path class="thread t2" d="M1080 300 C790 410 920 690 710 880 S390 1130 590 1370 S970 1570 760 1810 S350 2060 560 2320 S920 2590 760 2940"/>
+<path class="thread t3" d="M140 40 C360 300 250 610 520 780 S850 1080 680 1290 S290 1510 480 1770 S820 2050 650 2280 S370 2580 430 3020"/>
+</svg></div><section class="hero"><div class="top"><span>Александра Кузина</span><span class="dot"></span><span>AI creator</span></div><div class="orb o1"></div><div class="orb o2"></div><h1>Идеи<br><em>оживают.</em></h1><div class="scribble hand">а невозможное — становится кадром ✦</div><p class="lead">Создаю AI-истории, мультфильмы, визуал и видео, в которых технологии чувствуют по-человечески.</p><a class="cta" href="#works">Смотреть работы ↘</a><div class="avatar"><img src="IMG_6646.png"></div><div class="holo">AI • STORY • MOTION</div></section><div class="marquee"><span>ПРИРУЧАЮ ИИ С ЛЮБОВЬЮ 🤍 &nbsp; • &nbsp; AI FILMS &nbsp; • &nbsp; STORIES &nbsp; • &nbsp; VISUAL &nbsp; • &nbsp; ПРИРУЧАЮ ИИ С ЛЮБОВЬЮ 🤍 &nbsp; • &nbsp; AI FILMS &nbsp; • &nbsp; STORIES &nbsp; • &nbsp; VISUAL &nbsp; • &nbsp;</span></div><section class="section" id="works">
 <div class="eyebrow">Два направления</div>
 <h2>AI-видео<br><span class="serif">& AI-визуал.</span></h2>
 <div class="scriptline hand">две линии — бесконечно много историй</div>
@@ -106,8 +121,6 @@ background-size:180px 105px;mask-image:linear-gradient(to bottom,transparent 2%,
 <div class="tags"><span>Сказки · Метрики · Детский визуал</span><span>Визуал для брендов</span><span>Продающий визуал</span><span>Рабочие материалы</span></div>
 </article>
 </div>
-</section><section class="section about"><div class="neural-net" aria-hidden="true">
-<i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-</div><div class="eyebrow">Обо мне</div><h2>Привет,<br><span class="serif">я Александра Кузина.</span></h2><p><b>Мама в декрете, которая однажды открыла для себя AI — и превратила его в пространство для творчества.</b></p><p>Для меня нейросети — не просто способ сделать красивую картинку. Это возможность оживить то, что человеку действительно дорого.</p><div class="bigword">AI♡</div><div class="steps"><div class="step"><span class="num">01</span><span>Вы рассказываете идею</span></div><div class="step"><span class="num">02</span><span>Мы находим форму и настроение</span></div><div class="step"><span class="num">03</span><span>Я превращаю это в вашу историю</span></div></div></section><footer><div class="eyebrow">Есть идея?</div><h2>Давайте<br><span class="serif">оживим её.</span></h2><div class="hand">приручаю ИИ с любовью 🤍</div><div class="contact"><a href="https://www.instagram.com/al_kuzina__">Instagram</a><a href="https://t.me/+79508700483">Telegram</a><a href="https://vk.ru/club239922892">VK</a></div></footer></main><script>
+</section><section class="section about"><div class="eyebrow">Обо мне</div><h2>Привет,<br><span class="serif">я Александра Кузина.</span></h2><p><b>Мама в декрете, которая однажды открыла для себя AI — и превратила его в пространство для творчества.</b></p><p>Для меня нейросети — не просто способ сделать красивую картинку. Это возможность оживить то, что человеку действительно дорого.</p><div class="bigword">AI♡</div><div class="steps"><div class="step"><span class="num">01</span><span>Вы рассказываете идею</span></div><div class="step"><span class="num">02</span><span>Мы находим форму и настроение</span></div><div class="step"><span class="num">03</span><span>Я превращаю это в вашу историю</span></div></div></section><footer><div class="eyebrow">Есть идея?</div><h2>Давайте<br><span class="serif">оживим её.</span></h2><div class="hand">приручаю ИИ с любовью 🤍</div><div class="contact"><a href="https://www.instagram.com/al_kuzina__">Instagram</a><a href="https://t.me/+79508700483">Telegram</a><a href="https://vk.ru/club239922892">VK</a></div></footer></main><script>
 const ghost=document.querySelector('.ghost'); addEventListener('scroll',()=>{const y=scrollY; ghost.style.transform=`translateY(${Math.sin(y/160)*22}px) rotate(${y/35}deg)`; ghost.style.opacity=.72+Math.min(.28,y/1000)});
 </script></body></html>
