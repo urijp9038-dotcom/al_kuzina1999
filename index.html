@@ -189,6 +189,29 @@ background-size:42px 38px,48px 44px,46px 40px,40px 46px,100% 100%!important;
 filter:drop-shadow(0 4px 12px rgba(172,91,173,.18))}
 footer .hand,.scriptline{color:#d557a2!important}
 @media(max-width:699px){.neural-ribbon{opacity:.82!important}}
+
+/* refinement: one visual language, intact labels, luminous AI heart */
+.direction.video-dir,.direction.visual-dir{
+background:linear-gradient(145deg,rgba(78,57,108,.90),rgba(112,82,146,.78))!important;
+color:#fff!important;border:1px solid rgba(255,255,255,.18)!important;
+box-shadow:0 26px 80px rgba(92,57,133,.15)}
+.direction.video-dir h2,.direction.visual-dir h2,.direction.video-dir h3,.direction.visual-dir h3{color:#fff!important}
+.direction.video-dir .pill,.direction.visual-dir .pill{color:#fff!important;border-color:rgba(255,255,255,.78)!important;white-space:nowrap}
+.direction.video-dir .eyebrow,.direction.visual-dir .eyebrow{color:#ff8ed0!important}
+.bigword{
+background:linear-gradient(110deg,#ff3da6 0%,#ff76c7 30%,#c64cff 58%,#ff4ba8 82%,#ff9bd8 100%)!important;
+background-size:260% 260%!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important;
+filter:drop-shadow(0 0 8px rgba(255,61,166,.55)) drop-shadow(0 0 20px rgba(198,76,255,.34));
+animation:lovePulse 2.8s ease-in-out infinite,loveFlow 6s linear infinite!important}
+@keyframes lovePulse{0%,100%{transform:scale(1);filter:drop-shadow(0 0 7px rgba(255,61,166,.5)) drop-shadow(0 0 18px rgba(198,76,255,.3))}50%{transform:scale(1.045);filter:drop-shadow(0 0 14px rgba(255,61,166,.88)) drop-shadow(0 0 32px rgba(198,76,255,.58))}}
+@keyframes loveFlow{0%{background-position:0% 50%}100%{background-position:200% 50%}}
+.neural-ribbon{opacity:1!important}
+.neural-ribbon .glow{stroke-width:3.7!important;stroke-dasharray:none!important;animation:neuralPulse 3.2s ease-in-out infinite!important;filter:url(#softGlow)}
+.neural-ribbon .echo{stroke:rgba(221,76,255,.52)!important;stroke-width:1.8!important}
+@media(max-width:699px){
+.direction.video-dir .pill,.direction.visual-dir .pill{white-space:normal}
+.direction .eyebrow{white-space:nowrap;font-size:12px;letter-spacing:.22em}
+}
 </style></head><body><div class="ghost">✦</div><main class="wrap"><div class="neural-ribbon" aria-hidden="true"><svg viewBox="0 0 1000 3000" preserveAspectRatio="none"><defs><linearGradient id="neuralGlow" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b2cff"/><stop offset=".32" stop-color="#d34cff"/><stop offset=".58" stop-color="#ff55b8"/><stop offset=".78" stop-color="#8f66ff"/><stop offset="1" stop-color="#694cff"/></linearGradient><filter id="softGlow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><path class="echo" d="M-80 90 C250 20 350 420 610 330 C920 220 1010 500 760 650 C470 825 260 570 340 420 C430 255 770 320 740 550 C700 840 160 720 80 1030 C0 1350 480 1300 620 1130 C790 920 1080 1100 930 1370 C770 1660 390 1450 430 1270 C480 1040 880 1190 820 1540 C760 1900 180 1710 120 2070 C60 2430 600 2340 740 2150 C900 1930 1090 2260 890 2480 C690 2700 430 2520 500 2370 C590 2190 910 2390 790 2760 C740 2910 610 2990 500 3070"/><path class="glow" d="M-80 90 C250 20 350 420 610 330 C920 220 1010 500 760 650 C470 825 260 570 340 420 C430 255 770 320 740 550 C700 840 160 720 80 1030 C0 1350 480 1300 620 1130 C790 920 1080 1100 930 1370 C770 1660 390 1450 430 1270 C480 1040 880 1190 820 1540 C760 1900 180 1710 120 2070 C60 2430 600 2340 740 2150 C900 1930 1090 2260 890 2480 C690 2700 430 2520 500 2370 C590 2190 910 2390 790 2760 C740 2910 610 2990 500 3070"/></svg></div><div class="light-threads" aria-hidden="true">
 <svg viewBox="0 0 1000 3000" preserveAspectRatio="none">
 <defs>
