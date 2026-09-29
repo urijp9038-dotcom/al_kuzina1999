@@ -159,7 +159,37 @@ footer{color:#f7efeb!important}
 .neural-ribbon .echo{fill:none;stroke:rgba(255,202,170,.24);stroke-width:.8;filter:url(#softGlow)}
 @keyframes neuralDrift{to{stroke-dashoffset:-500}}
 @media(max-width:699px){.neural-ribbon{inset:900px -28% 0 -28%;opacity:.55}.neural-ribbon svg{min-height:3600px}}
-</style></head><body><div class="ghost">✦</div><main class="wrap"><div class="neural-ribbon" aria-hidden="true"><svg viewBox="0 0 1000 3000" preserveAspectRatio="none"><defs><linearGradient id="neuralGlow" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffbe83"/><stop offset=".42" stop-color="#f29bb7"/><stop offset=".72" stop-color="#b59bd8"/><stop offset="1" stop-color="#8fb9d9"/></linearGradient><filter id="softGlow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><path class="echo" d="M-80 90 C250 20 350 420 610 330 C920 220 1010 500 760 650 C470 825 260 570 340 420 C430 255 770 320 740 550 C700 840 160 720 80 1030 C0 1350 480 1300 620 1130 C790 920 1080 1100 930 1370 C770 1660 390 1450 430 1270 C480 1040 880 1190 820 1540 C760 1900 180 1710 120 2070 C60 2430 600 2340 740 2150 C900 1930 1090 2260 890 2480 C690 2700 430 2520 500 2370 C590 2190 910 2390 790 2760 C740 2910 610 2990 500 3070"/><path class="glow" d="M-80 90 C250 20 350 420 610 330 C920 220 1010 500 760 650 C470 825 260 570 340 420 C430 255 770 320 740 550 C700 840 160 720 80 1030 C0 1350 480 1300 620 1130 C790 920 1080 1100 930 1370 C770 1660 390 1450 430 1270 C480 1040 880 1190 820 1540 C760 1900 180 1710 120 2070 C60 2430 600 2340 740 2150 C900 1930 1090 2260 890 2480 C690 2700 430 2520 500 2370 C590 2190 910 2390 790 2760 C740 2910 610 2990 500 3070"/></svg></div><div class="light-threads" aria-hidden="true">
+
+/* fresh lemon + violet neon art direction */
+main.wrap{background:
+radial-gradient(ellipse at 78% 7%,rgba(246,235,132,.26),transparent 32%),
+radial-gradient(ellipse at 12% 34%,rgba(180,117,255,.16),transparent 34%),
+radial-gradient(ellipse at 88% 62%,rgba(255,137,196,.14),transparent 31%),
+linear-gradient(180deg,#f4efc4 0%,#f6f3dc 18%,#f2eff4 43%,#eee9f7 67%,#f8f4df 100%)!important;color:#272332}
+.hero:after{background:linear-gradient(transparent,rgba(34,29,43,.08) 42%,#f4efc4 100%)!important}
+main.wrap>section:not(.hero) h2,main.wrap>section:not(.hero) h3{color:#292435}
+main.wrap>section:not(.hero) p{color:rgba(41,36,53,.72)}
+.about{background:linear-gradient(135deg,rgba(255,255,246,.48),rgba(239,230,255,.35))!important;border:1px solid rgba(255,255,255,.72);color:#292435;box-shadow:0 28px 90px rgba(128,83,176,.10)}
+.step{background:rgba(255,255,250,.44)!important;border:1px solid rgba(255,255,255,.72)!important;color:#292435;box-shadow:0 16px 48px rgba(115,81,151,.08)}
+.direction.video-dir{background:linear-gradient(145deg,rgba(48,38,66,.94),rgba(102,67,142,.82))!important}
+.direction.visual-dir{background:linear-gradient(145deg,rgba(248,239,154,.78),rgba(242,229,179,.66))!important;color:#292435}
+footer{color:#292435!important}
+.neural-ribbon{opacity:.96!important}
+.neural-ribbon .glow{stroke-width:3.1!important;filter:url(#softGlow);stroke-dasharray:7 11;animation:neuralDrift 13s linear infinite,neuralPulse 4.2s ease-in-out infinite}
+.neural-ribbon .echo{stroke:rgba(177,89,255,.42)!important;stroke-width:1.4!important;filter:url(#softGlow)}
+@keyframes neuralPulse{0%,100%{opacity:.65}50%{opacity:1}}
+.bigword{position:relative;display:inline-block;background:
+radial-gradient(circle at 18% 30%,#1d1720 0 6%,transparent 7%),
+radial-gradient(circle at 43% 68%,#2b2027 0 7%,transparent 8%),
+radial-gradient(circle at 72% 28%,#17131a 0 6%,transparent 7%),
+radial-gradient(circle at 86% 73%,#322128 0 5%,transparent 6%),
+linear-gradient(115deg,#e6ad55 0%,#f4d17b 34%,#d89143 64%,#f1c66b 100%)!important;
+background-size:42px 38px,48px 44px,46px 40px,40px 46px,100% 100%!important;
+-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important;
+filter:drop-shadow(0 4px 12px rgba(172,91,173,.18))}
+footer .hand,.scriptline{color:#d557a2!important}
+@media(max-width:699px){.neural-ribbon{opacity:.82!important}}
+</style></head><body><div class="ghost">✦</div><main class="wrap"><div class="neural-ribbon" aria-hidden="true"><svg viewBox="0 0 1000 3000" preserveAspectRatio="none"><defs><linearGradient id="neuralGlow" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b2cff"/><stop offset=".32" stop-color="#d34cff"/><stop offset=".58" stop-color="#ff55b8"/><stop offset=".78" stop-color="#8f66ff"/><stop offset="1" stop-color="#694cff"/></linearGradient><filter id="softGlow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><path class="echo" d="M-80 90 C250 20 350 420 610 330 C920 220 1010 500 760 650 C470 825 260 570 340 420 C430 255 770 320 740 550 C700 840 160 720 80 1030 C0 1350 480 1300 620 1130 C790 920 1080 1100 930 1370 C770 1660 390 1450 430 1270 C480 1040 880 1190 820 1540 C760 1900 180 1710 120 2070 C60 2430 600 2340 740 2150 C900 1930 1090 2260 890 2480 C690 2700 430 2520 500 2370 C590 2190 910 2390 790 2760 C740 2910 610 2990 500 3070"/><path class="glow" d="M-80 90 C250 20 350 420 610 330 C920 220 1010 500 760 650 C470 825 260 570 340 420 C430 255 770 320 740 550 C700 840 160 720 80 1030 C0 1350 480 1300 620 1130 C790 920 1080 1100 930 1370 C770 1660 390 1450 430 1270 C480 1040 880 1190 820 1540 C760 1900 180 1710 120 2070 C60 2430 600 2340 740 2150 C900 1930 1090 2260 890 2480 C690 2700 430 2520 500 2370 C590 2190 910 2390 790 2760 C740 2910 610 2990 500 3070"/></svg></div><div class="light-threads" aria-hidden="true">
 <svg viewBox="0 0 1000 3000" preserveAspectRatio="none">
 <defs>
 <linearGradient id="threadA" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#72cfff" stop-opacity=".08"/><stop offset=".45" stop-color="#9b7cff" stop-opacity=".42"/><stop offset="1" stop-color="#ff78bd" stop-opacity=".10"/></linearGradient>
