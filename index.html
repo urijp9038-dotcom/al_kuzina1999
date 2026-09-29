@@ -15,6 +15,41 @@
 
 
 @media(max-width:699px){}
+
+/* premium depth */
+body{background:
+radial-gradient(circle at 12% 18%,rgba(216,226,255,.72) 0,transparent 28%),
+radial-gradient(circle at 88% 42%,rgba(255,213,237,.58) 0,transparent 26%),
+radial-gradient(circle at 38% 78%,rgba(226,215,255,.55) 0,transparent 30%),
+linear-gradient(180deg,#f9f8fc 0%,#f2f4fb 48%,#faf6fb 100%);
+background-attachment:fixed}
+.section{background:transparent}
+.about{background:linear-gradient(135deg,rgba(255,255,255,.76),rgba(245,240,255,.64));backdrop-filter:blur(12px);border-top:1px solid rgba(255,255,255,.75);border-bottom:1px solid rgba(255,255,255,.75)}
+.step{background:rgba(255,255,255,.62);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.9);box-shadow:0 16px 45px rgba(58,63,110,.08)}
+.bigword{width:max-content;margin:56px auto 44px;font-size:clamp(92px,16vw,180px);line-height:.78;letter-spacing:-.09em;
+background:linear-gradient(110deg,#ff5fb2 5%,#8d7cff 42%,#65c8ff 68%,#ff78bd 96%);
+background-size:240% 240%;-webkit-background-clip:text;background-clip:text;color:transparent;
+filter:drop-shadow(0 0 16px rgba(139,119,255,.22)) drop-shadow(0 0 34px rgba(255,95,178,.18));
+animation:aiBreath 3.8s ease-in-out infinite,aiShimmer 7s ease-in-out infinite;transform-origin:center}
+@keyframes aiBreath{0%,100%{transform:scale(1);filter:drop-shadow(0 0 14px rgba(139,119,255,.20)) drop-shadow(0 0 28px rgba(255,95,178,.16))}50%{transform:scale(1.055);filter:drop-shadow(0 0 24px rgba(139,119,255,.35)) drop-shadow(0 0 48px rgba(255,95,178,.28))}}
+@keyframes aiShimmer{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+@media(min-width:1000px){
+.wrap{width:min(100%,1440px)}
+.hero{min-height:860px;padding-left:clamp(64px,8vw,130px);padding-right:clamp(64px,8vw,130px)}
+.hero h1{font-size:clamp(100px,10vw,154px);max-width:900px}
+.hero .lead{font-size:20px;max-width:470px}
+.section{padding:120px clamp(70px,9vw,150px)}
+#works>h2,.about>h2{font-size:clamp(62px,6vw,88px)}
+.directions{gap:26px}
+.direction{min-height:430px;padding:44px 40px;display:flex;flex-direction:column}
+.direction .tags{margin-top:auto}
+.about{border-radius:54px;margin:40px clamp(32px,5vw,80px);padding-left:clamp(70px,8vw,130px);padding-right:clamp(70px,8vw,130px);box-shadow:0 30px 100px rgba(75,64,125,.08)}
+.about p{max-width:760px}
+.steps{grid-template-columns:repeat(3,1fr);gap:18px}
+.step{min-height:112px}
+footer{margin-top:60px;border-radius:54px 54px 0 0}
+}
+@media(prefers-reduced-motion:reduce){.bigword{animation:none}}
 </style></head><body><div class="ghost">✦</div><main class="wrap"><section class="hero"><div class="top"><span>Александра Кузина</span><span class="dot"></span><span>AI creator</span></div><div class="orb o1"></div><div class="orb o2"></div><h1>Идеи<br><em>оживают.</em></h1><div class="scribble hand">а невозможное — становится кадром ✦</div><p class="lead">Создаю AI-истории, мультфильмы, визуал и видео, в которых технологии чувствуют по-человечески.</p><a class="cta" href="#works">Смотреть работы ↘</a><div class="avatar"><img src="IMG_6646.png"></div><div class="holo">AI • STORY • MOTION</div></section><div class="marquee"><span>ПРИРУЧАЮ ИИ С ЛЮБОВЬЮ 🤍 &nbsp; • &nbsp; AI FILMS &nbsp; • &nbsp; STORIES &nbsp; • &nbsp; VISUAL &nbsp; • &nbsp; ПРИРУЧАЮ ИИ С ЛЮБОВЬЮ 🤍 &nbsp; • &nbsp; AI FILMS &nbsp; • &nbsp; STORIES &nbsp; • &nbsp; VISUAL &nbsp; • &nbsp;</span></div><section class="section" id="works">
 <div class="eyebrow">Два направления</div>
 <h2>AI-видео<br><span class="serif">& AI-визуал.</span></h2>
