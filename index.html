@@ -217,6 +217,15 @@ animation:lovePulse 2.8s ease-in-out infinite,loveFlow 6s linear infinite!import
 .bigword{font-family:Arial,Helvetica,sans-serif!important;font-weight:800!important;letter-spacing:.035em!important;text-transform:uppercase;white-space:nowrap}
 .bigword::after{content:"";position:absolute;left:4%;right:4%;bottom:-12px;height:2px;border-radius:99px;background:linear-gradient(90deg,transparent,#ff4db1 15%,#c44cff 55%,#ff65bd 84%,transparent);box-shadow:0 0 9px #ff4db1,0 0 22px rgba(196,76,255,.75);animation:signatureThread 3s ease-in-out infinite}
 @keyframes signatureThread{0%,100%{opacity:.48;transform:scaleX(.78)}50%{opacity:1;transform:scaleX(1)}}
+
+/* mobile typography polish */
+@media(max-width:699px){
+.bigword{display:block!important;width:max-content!important;max-width:92%!important;font-size:clamp(38px,11.2vw,58px)!important;line-height:.92!important;letter-spacing:.015em!important;white-space:nowrap!important;transform-origin:left center}
+.bigword::after{bottom:-8px!important}
+.hero .scribble{margin-left:0!important;margin-top:16px!important;max-width:8.8em!important;width:8.8em!important;font-size:clamp(19px,5.7vw,25px)!important;line-height:1.18!important;transform:rotate(-3deg)!important}
+.hero .scribble br{display:none}
+.hero .lead{margin-top:220px!important}
+}
 </style></head><body><div class="ghost">✦</div><main class="wrap"><div class="neural-ribbon" aria-hidden="true"><svg viewBox="0 0 1000 3000" preserveAspectRatio="none"><defs><linearGradient id="neuralGlow" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b2cff"/><stop offset=".32" stop-color="#d34cff"/><stop offset=".58" stop-color="#ff55b8"/><stop offset=".78" stop-color="#8f66ff"/><stop offset="1" stop-color="#694cff"/></linearGradient><filter id="softGlow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><path class="echo" d="M-80 90 C250 20 350 420 610 330 C920 220 1010 500 760 650 C470 825 260 570 340 420 C430 255 770 320 740 550 C700 840 160 720 80 1030 C0 1350 480 1300 620 1130 C790 920 1080 1100 930 1370 C770 1660 390 1450 430 1270 C480 1040 880 1190 820 1540 C760 1900 180 1710 120 2070 C60 2430 600 2340 740 2150 C900 1930 1090 2260 890 2480 C690 2700 430 2520 500 2370 C590 2190 910 2390 790 2760 C740 2910 610 2990 500 3070"/><path class="glow" d="M-80 90 C250 20 350 420 610 330 C920 220 1010 500 760 650 C470 825 260 570 340 420 C430 255 770 320 740 550 C700 840 160 720 80 1030 C0 1350 480 1300 620 1130 C790 920 1080 1100 930 1370 C770 1660 390 1450 430 1270 C480 1040 880 1190 820 1540 C760 1900 180 1710 120 2070 C60 2430 600 2340 740 2150 C900 1930 1090 2260 890 2480 C690 2700 430 2520 500 2370 C590 2190 910 2390 790 2760 C740 2910 610 2990 500 3070"/></svg></div><div class="light-threads" aria-hidden="true">
 <svg viewBox="0 0 1000 3000" preserveAspectRatio="none">
 <defs>
