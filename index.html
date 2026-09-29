@@ -95,6 +95,18 @@ footer{margin-top:60px;border-radius:54px 54px 0 0}
 @keyframes threadFlow{to{stroke-dashoffset:-280}}
 @media(max-width:699px){.thread{stroke-width:.9}.t3{display:none}.t1{opacity:.42}.t2{opacity:.34}}
 @media(prefers-reduced-motion:reduce){.thread{animation:none}}
+
+/* cinematic photo hero */
+.hero{background-image:linear-gradient(90deg,rgba(8,14,25,.72) 0%,rgba(8,14,25,.48) 36%,rgba(8,14,25,.10) 68%,rgba(8,14,25,.18) 100%),url('IMG_7035.png');background-size:cover;background-position:center 38%;color:#fff}
+.hero:after{content:"";position:absolute;inset:auto 0 0;height:34%;background:linear-gradient(transparent,rgba(7,12,22,.38));pointer-events:none}
+.hero .top,.hero h1,.hero .scribble,.hero .lead,.hero .cta{position:relative;z-index:5}
+.hero .lead{color:rgba(255,255,255,.86);text-shadow:0 2px 18px rgba(0,0,0,.24)}
+.hero h1{text-shadow:0 5px 35px rgba(0,0,0,.24)}
+.hero .scribble{color:#ffd0e7;text-shadow:0 2px 18px rgba(0,0,0,.3)}
+.hero .cta{background:rgba(255,255,255,.94);color:#111827;box-shadow:0 14px 38px rgba(0,0,0,.2)}
+.hero .avatar,.hero .holo,.hero .orb{display:none}
+@media(max-width:699px){.hero{min-height:100svh;padding-bottom:54px;background-position:57% center}.hero h1{margin-top:78px;font-size:clamp(56px,17vw,82px);max-width:7ch}.hero .scribble{margin-left:4%;max-width:13ch;font-size:23px}.hero .lead{max-width:29ch;margin-top:28px}}
+@media(min-width:1000px){.hero{min-height:900px;background-position:center 43%}.hero h1{max-width:760px;margin-top:150px}}
 </style></head><body><div class="ghost">✦</div><main class="wrap"><div class="light-threads" aria-hidden="true">
 <svg viewBox="0 0 1000 3000" preserveAspectRatio="none">
 <defs>
