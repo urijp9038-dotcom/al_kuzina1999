@@ -107,6 +107,30 @@ footer{margin-top:60px;border-radius:54px 54px 0 0}
 .hero .avatar,.hero .holo,.hero .orb{display:none}
 @media(max-width:699px){.hero{min-height:100svh;padding-bottom:54px;background-position:57% center}.hero h1{margin-top:78px;font-size:clamp(56px,17vw,82px);max-width:7ch}.hero .scribble{margin-left:4%;max-width:13ch;font-size:23px}.hero .lead{max-width:29ch;margin-top:28px}}
 @media(min-width:1000px){.hero{min-height:900px;background-position:center 43%}.hero h1{max-width:760px;margin-top:150px}}
+
+/* palette continuity from the Kursk sunset hero */
+:root{--ink:#251e21;--wine:#4d342d;--cocoa:#634935;--dust:#936e5b;--sun:#d2944e;--cream:#f1eff4;--mist:#a1979c}
+body{background:
+radial-gradient(circle at 12% 16%,rgba(210,148,78,.18) 0,transparent 29%),
+radial-gradient(circle at 88% 43%,rgba(147,110,91,.16) 0,transparent 28%),
+radial-gradient(circle at 35% 78%,rgba(161,151,156,.18) 0,transparent 31%),
+linear-gradient(180deg,#f1eff4 0%,#eee8e5 48%,#f5f0ec 100%);color:var(--ink)}
+.eyebrow{color:#a86e38}
+.direction.video-dir{background:linear-gradient(145deg,#251e21,#4d342d)}
+.direction.visual-dir{background:linear-gradient(145deg,#f0d7c5,#d9c2b9);color:#251e21}
+.about{background:linear-gradient(135deg,rgba(241,239,244,.86),rgba(230,216,208,.72));box-shadow:0 30px 100px rgba(77,52,45,.10)}
+.step{background:rgba(247,241,237,.68);border-color:rgba(255,255,255,.72);box-shadow:0 16px 45px rgba(77,52,45,.08)}
+.num{color:#b3783f}
+.bigword{background:linear-gradient(110deg,#d2944e 5%,#936e5b 40%,#a1979c 68%,#c98268 96%);background-size:240% 240%;-webkit-background-clip:text;background-clip:text;color:transparent}
+footer{background:linear-gradient(160deg,#ead8cd,#e7e0df 55%,#f4eee9)}
+footer .hand,.scriptline{color:#a9685f}
+.ghost{background:linear-gradient(145deg,#d7a276,#a1979c);box-shadow:0 10px 35px rgba(99,73,53,.25)}
+/* keep the mobile hero copy away from the character's face */
+@media(max-width:699px){
+.hero h1{margin-top:66px}
+.hero .scribble{margin-left:0;transform:translateY(-2px) rotate(-4deg);max-width:12ch;font-size:21px}
+.hero .lead{margin-top:210px;max-width:30ch}
+}
 </style></head><body><div class="ghost">✦</div><main class="wrap"><div class="light-threads" aria-hidden="true">
 <svg viewBox="0 0 1000 3000" preserveAspectRatio="none">
 <defs>
